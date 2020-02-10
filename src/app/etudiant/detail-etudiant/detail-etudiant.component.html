@@ -1,0 +1,15 @@
+<h2>Employee Details</h2>
+
+<hr/>
+<div *ngIf="etudiant">
+  <div>
+    <label><b>Nom: </b></label> {{etudiant.nom}}
+  </div>
+  <div>
+    <label><b>Prenom: </b></label> {{etudiant.prenom}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Retour à la liste des étudiants</button><br>
